@@ -1,6 +1,8 @@
 library(shiny)
 library(shinythemes)
-install.packages("spacejam")
+library(devtools)
+install_github("OLGJ/spacejam")
+#install.packages("spacejam")
 library(spacejam)
 # Call CME function and set dates to use in app
 data <- spacejam("2010-01-01", "2010-12-31")$data
